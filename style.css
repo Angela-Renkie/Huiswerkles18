@@ -1,0 +1,65 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+
+  .header {
+    background-image: url('Plaatsnaambord_Surhuisterveen.jpg'); /* vervang met echte URL of bestand */
+    background-size: cover;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .col {
+    padding: 15px;
+  }
+
+  .left-col {
+    background-color: #f0f0f0;
+  }
+
+  .right-col {
+    background-color: #dceaf7;
+  }
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  article img {
+    width: 100px;
+    height: auto;
+    margin-left: 15px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+
+    .col-2 {width: 16.66%;}
+    .col-9 {width: 75%;}
+    .col-12 {width: 100%;}
+  }
